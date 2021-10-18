@@ -1,0 +1,5 @@
+docker build -t  passwordapi .
+docker run -d -p 8080:8080 passwordapi 
+docker  tag passwordapi  mfiliberto/ejercicio_4
+docker  push mfiliberto/ejercicio_4:latest
+docker run -d -p 8080:8080 mfiliberto/ejercicio_4
